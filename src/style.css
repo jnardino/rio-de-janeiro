@@ -1,6 +1,15 @@
+:root {
+    --primary-color: #FEF5EDff;
+    --title-color: #007189ff;
+    --section-color: #EADED0ff;
+    --text-color: #040F16;
+    --dark-moss-green: #50673Bff;
+    --yellow-green: #BDD367ff;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #272044;
+    background-color: var(--section-color);
 }
 
 .container {
@@ -20,10 +29,10 @@ section {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../images/rio-hero.jpg);
+    background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/rio-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff; 
+    color: var(--primary-color);
     text-align: center;
     padding: 260px 0;
 }
@@ -52,7 +61,7 @@ header h3 {
 
 header a {
     display: inline-block;
-    color: #272044;
+    color: var(--text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
@@ -60,16 +69,16 @@ header a {
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: uppercase;
-    background: #fff;
+    background: var(--primary-color);
     padding: 16px 32px;
     margin-top: 32px;
 }
 
 footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../images/calcadao-footer.jpg);
+    background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/calcadao-footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff; 
+    color: var(--primary-color);
     padding: 100px 0;
 }
 
@@ -83,7 +92,7 @@ footer p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 footer ul {
@@ -97,8 +106,8 @@ footer li {
 }
 
 footer a {
-    color: #fff;
-    opacity: 0.7;
+    color: var(--primary-color);
+    opacity: 0.9;
 }
 
 @media (max-width: 900px) {
