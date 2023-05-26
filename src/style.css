@@ -70,7 +70,6 @@ header p {
 
 .grid {
     display: grid;
-    grid-gap: 60px;
 }
 
 section {
@@ -87,9 +86,27 @@ section {
     text-align: center;
 }
 
+.responsive-image {
+    display: block;
+    width: 100%;
+}
+
 .card {
     background-color: var(--primary-color);
     margin: 30px 0;
+}
+
+.card-head.grid {
+    grid-gap: 0;
+}
+
+/* .card-image {
+    max-height: 136px;
+} */
+
+.embed {
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
 .card-body {
@@ -98,6 +115,7 @@ section {
 
 .grid-3-columns {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 
 h5 {
@@ -155,17 +173,14 @@ main {
 
 .grid-2-columns {
     grid-template-columns: 1fr 1fr;
-}
-
-.responsive-image {
-    display: block;
-    max-width: 100%;
+    grid-gap: 60px;
 }
 
 footer {
     background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/calcadao-footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: var(--primary-color);
 }
 
@@ -198,6 +213,7 @@ footer a {
 
 .grid-3-columns-footer {
     grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 60px;
 }
 
 @media (max-width: 900px) {
@@ -224,6 +240,14 @@ footer a {
 
     section {
         padding: 30px;
+    }
+
+    .card-head img {
+    display: none;
+    }
+    
+    .embed {
+        aspect-ratio: 16/9;
     }
 
     h4 {
