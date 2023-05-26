@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #FEF5EDff;
+    --primary-color: #fff;
     --title-color: #007189ff;
     --section-color: #EADED0ff;
     --text-color: #040F16;
@@ -21,11 +21,11 @@ h1 {
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 40px;
     line-height: 1.5;
+    color: var(--title-color);
     margin: 0;
-    color: var(--primary-color);
 }
 
 h3 {
@@ -38,14 +38,6 @@ h3 {
 }
 
 h4 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.5;
-    color: var(--title-color);
-    margin: 0;
-}
-
-h5 {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
@@ -61,6 +53,14 @@ p {
     font-size: 16px;
     line-height: 24px;
     color: var(--text-color);
+}
+
+header p {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--primary-color);
 }
 
 .container {
@@ -83,7 +83,7 @@ section {
     background-color: var(--section-color);
 }
 
-.secondary h4, .secondary h5  {
+.secondary h2, .secondary h4  {
     /* background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/landscape.jpg); */
     text-align: center;
 }
