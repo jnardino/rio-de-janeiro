@@ -74,9 +74,23 @@ p {
 }
 
 section {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px;
+}
+
+.secondary {
+    /* background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/landscape.jpg); */
+    background-color: var(--section-color);
+}
+
+.secondary h4, .secondary h5  {
+    /* background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/landscape.jpg); */
+    text-align: center;
+}
+
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 header {
@@ -111,7 +125,7 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
-.main-image {
+.responsive-image {
     max-width: 100%;
 }
 
