@@ -78,7 +78,6 @@ section {
 }
 
 .secondary {
-    /* background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/landscape.jpg); */
     background-color: var(--section-color);
 }
 
@@ -99,10 +98,6 @@ section {
 .card-head.grid {
     grid-gap: 0;
 }
-
-/* .card-image {
-    max-height: 136px;
-} */
 
 .embed {
     width: 100%;
