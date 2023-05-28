@@ -68,9 +68,8 @@ header p {
     margin: 0 auto;
 }
 
-.grid {
-    display: grid;
-    align-items: stretch;
+.center-title {
+    text-align: center;
 }
 
 section {
@@ -78,8 +77,26 @@ section {
     padding: 100px;
 }
 
-.secondary {
-    background-color: var(--section-color);
+/* ------ GRIDS ------ */
+
+.grid {
+    display: grid;
+    align-items: stretch;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.grid-3-columns-footer {
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 60px;
 }
 
 .responsive-image {
@@ -87,9 +104,42 @@ section {
     width: 100%;
 }
 
-.card-image {
-    object-fit: cover;
-    aspect-ratio: 1/1;
+/* ------ HEADER ------ */
+
+header {
+    background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/rio-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 260px 0;
+}
+
+header a {
+    display: inline-block;
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: var(--primary-color);
+    padding: 16px 32px;
+    margin-top: 32px;
+}
+
+/* ------ MAIN SECTION ------ */
+
+main {
+    background-color: var(--primary-color);
+}
+
+/* ------ SECOND SECTION ------ */
+
+.secondary {
+    background-color: var(--section-color);
 }
 
 .card {
@@ -101,6 +151,11 @@ section {
     grid-gap: 0;
 }
 
+.card-image {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
 .embed {
     width: 100%;
     aspect-ratio: 1/1;
@@ -108,11 +163,6 @@ section {
 
 .card-body {
     padding: 30px;
-}
-
-.grid-3-columns {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
 }
 
 h5 {
@@ -140,46 +190,13 @@ h5 {
     text-decoration: none;
 }
 
-header {
-    background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/rio-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--primary-color);
-    text-align: center;
-    padding: 260px 0;
-}
-
-header a {
-    display: inline-block;
-    color: var(--title-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 3px;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: var(--primary-color);
-    padding: 16px 32px;
-    margin-top: 32px;
-}
-
-main {
-    background-color: var(--primary-color);
-}
-
-.grid-2-columns {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
-}
-
-.center-title {
-    text-align: center;
-}
+/* ------ THIRD SECTION ------ */
 
 .instagram-embed {
     margin: 30px 0;
 }
+
+/* ------ FOOTER ------ */
 
 footer {
     background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/calcadao-footer.jpg);
@@ -216,10 +233,7 @@ footer a {
     opacity: 0.9;
 }
 
-.grid-3-columns-footer {
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-gap: 60px;
-}
+/* ------ RESPONSIVE ------ */
 
 @media (max-width: 900px) {
     header {
