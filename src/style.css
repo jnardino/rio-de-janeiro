@@ -81,10 +81,6 @@ section {
     background-color: var(--section-color);
 }
 
-.secondary h2, .secondary h4  {
-    text-align: center;
-}
-
 .responsive-image {
     display: block;
     width: 100%;
@@ -169,6 +165,10 @@ main {
 .grid-2-columns {
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px;
+}
+
+.center-title {
+    text-align: center;
 }
 
 footer {
