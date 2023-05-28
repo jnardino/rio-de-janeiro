@@ -1,10 +1,9 @@
 :root {
     --primary-color: #fff;
-    --title-color: #007189ff;
-    --section-color: #EADED0ff;
-    --text-color: #040F16;
-    --dark-moss-green: #50673Bff;
-    --yellow-green: #BDD367ff;
+    --title-color: #007189;
+    --text-color: #1a1d1a;
+    --section-color: #fef5ed;
+    --highlight-color: #f28123;
 }
 
 body {
@@ -107,7 +106,7 @@ section {
 /* ------ HEADER ------ */
 
 header {
-    background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/rio-hero.jpg);
+    background-image: linear-gradient(rgba(0, 113, 137, 0.6), rgba(242, 129, 35, 0.6)), url(../images/rio-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--primary-color);
@@ -188,7 +187,7 @@ h5 {
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 16px;
-    background-color: var(--title-color);
+    background-color: var(--highlight-color);
     text-decoration: none;
 }
 
@@ -201,7 +200,7 @@ h5 {
 /* ------ FOOTER ------ */
 
 footer {
-    background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/calcadao-footer.jpg);
+    background-image: linear-gradient(rgba(0, 113, 137, 0.6), rgba(242, 129, 35, 0.6)), url(../images/calcadao-footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
