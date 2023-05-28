@@ -177,6 +177,10 @@ main {
     text-align: center;
 }
 
+.instagram-embed {
+    margin: 30px 0;
+}
+
 footer {
     background-image: linear-gradient(rgba(39, 51, 29, 0.6), rgba(172, 62, 71, 0.4)), url(../images/calcadao-footer.jpg);
     background-repeat: no-repeat;
